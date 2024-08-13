@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-77dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shop" />
+
+    <ImageView
+        android:id="@+id/imageViewBackground2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="406dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ponto" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:text="Ponto de Venda Móvel"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonIrCaixa"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/black"
+        android:text="Ir ao Caixa"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/buttonCadastrarPedido"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="Cadastrar Pedido"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

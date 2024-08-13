@@ -1,0 +1,40 @@
+Aqui vamos aprender a como responder o exercício :
+Dado o endereço 192.168.19.8/21
+Qual o Tamanho do Bloco de Endereço?
+Qual o Endereço de Rede?
+Qual o Endereço de Broadcast?
+Qual a Quantidade de IP's Disponíveis?
+
+
+1. Primeiramente, precisamos converter o IP 192.168.19.8/21 para Binário, como fazemos isso?
+
+IPV4 para Binário : 
+Devemos usar 8 bits (128, 64, 32, 16, 8, 4, 2 e 1)
+Começando sempre da esquerda para direita, separamos até o ponto
+Exemplo 192 = 128 + 64, quando usamos o bit, colocamos como 1, caso não, usamos 0. Então, 11000000
+
+192.168.19.8 para binário ficaria (11000000.10101000.0010011.00001000)
+
+
+Para descobrir o tamanho do Bloco de endereço:
+Pegamos a Máscara, no caso o número após a "/" sendo nesse caso, o 21, total de bits máximo é 32 (32-21) sobrando 11 bits
+Como é binário, fazemos 2 elevado a 11, sendo assim, 2048 é o tamanho do bloco de endereço
+
+Para descobrir o Endereço da rede: 
+Os dois primeiros octeto não precisamos mexer, pois a soma é 16, mexeremos apartir do 3 octeto apenas, no caso > 00001010.00000111 
+Aqui iremos separar exatamente no valor da máscara, no caso 21 
+Como não colocamos dois octetos (16) cortamos após a 5 casa totalizando 21 > > 00001|010.00000111
+Até a mascara substituimos tudo por 1, após ela colocamos 0
+para descobrir o endereço, tudo após a máscara iremos subistituir por 0
+logo 00001|000.00000000 e pegamos até o final do primeiro octeto
+usando a conversão para binário (128, 64, 32, 16, 8, 4, 2 e 1) ficaria 8
+
+Endereço da Rede : 192.168.8.0 (8 do primeiro octeto e 0 no segundo octeto)
+
+
+Para descobrir o endereço de broadcast: No broadcast pegaremos até a mascara e tudo após colocaremos 1, logo 0000|1111.11111111 (totalizando 255)
+
+Endereço de Broadcast 192.168.15.255 (15 a soma do primeiro octeto 8+4+2+1 e 255 a soma do último octeto)
+
+Para decobrir a quantidade de endereços IPs Disponíveis: Na quantidade de Ip's pegaremos o máximo (32 - 21(mascara) = 11
+como é binário, 2 elevado a 11 = 2048 - 2 (menos os dois endereços)

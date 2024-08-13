@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Médicos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8; /* Azul muito claro */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        form .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button {
+            background-color: #007bff; /* Cor do botão de salvar */
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        form button:hover {
+            background-color: #0056b3; /* Cor do botão de salvar ao passar o mouse */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff; /* Cor do cabeçalho da tabela */
+            color: white;
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Cor das linhas pares da tabela */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Cadastro de Médicos</h1>
+    <form method="post" th:action="@{/medico/save}">
+        <div class="form-group">
+            <input type="text" placeholder="Nome" name="nome" required>
+            <input type="text" placeholder="Especialidade" name="especialidade" required>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <h1>Listar De Médicos</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Especialidade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="medico : ${medico}">
+            <td th:text="${medico.id}"></td>
+            <td th:text="${medico.nome}"></td>
+            <td th:text="${medico.especialidade}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5; /* Um cinza claro */
+            color: #333;
+        }
+
+        h1 {
+            color: #007bff; /* Azul vivo */
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        form, table {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], select, button {
+            margin-top: 8px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: calc(100% - 22px);
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Azul escuro ao passar o mouse */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, tr, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff; /* Azul vivo */
+            color: white;
+            font-weight: 700;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h1>Consulta</h1>
+    <form th:action="@{/atendimento/save}" method="post">
+        <div class="form-group">
+            <label for="data_hora">Data e Hora:</label>
+            <input type="text" id="data_hora" name="data_hora" required>
+
+            <label for="anamnese">Anamnese:</label>
+            <input type="text" id="anamnese" name="anamnese" required>
+
+            <label for="medico">Médico:</label>
+            <select id="medico" name="medico" required>
+                <option th:each="medico : ${medicos}" th:text="${medico.nome}" th:value="${medico.id}"></option>
+            </select>
+
+            <label for="paciente">Paciente:</label>
+            <select id="paciente" name="paciente" required>
+                <option th:each="paciente : ${pacientes}" th:text="${paciente.nome}" th:value="${paciente.id}"></option>
+            </select>
+
+            <button type="submit">Salvar Consulta</button>
+        </div>
+    </form>
+
+    <h1>Lista de Consultas</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Data e Hora</th>
+            <th>Anamnese</th>
+            <th>Médico</th>
+            <th>Paciente</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="atendimento : ${atendimento}">
+            <td th:text="${atendimento.id}"></td>
+            <td th:text="${atendimento.data_hora}"></td>
+            <td th:text="${atendimento.anamnese}"></td>
+            <td th:text="${atendimento.getMedico().getNome()}"></td>
+            <td th:text="${atendimento.getPaciente().getNome()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

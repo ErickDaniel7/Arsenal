@@ -1,0 +1,165 @@
+1.Com base na apresentação dos trabalhos sobre o Modelo de Qualidade de Software em "U", responda a seguinte questão:
+O Modelo de Qualidade de Software em "U" se caracteriza por:  
+
+() Ser aplicado exclusivamente na fase de testes do software.
+(X) Dividir-se em duas fases distintas: testes de verificação e testes de validação.
+() Concentrar-se apenas na detecção de erros na implementação do software.
+() Ser aplicável somente a softwares de grande porte e complexidade.
+() Dispensar a realização de testes de validação, focando apenas na verificação.
+
+
+2.Com base na apresentação dos trabalhos sobre o Modelo de Qualidade de Software em "U", responda a seguinte questão:
+Qual a principal diferença entre os testes de verificação e validação no Modelo de Qualidade de Software em "U"?
+
+() Os testes de verificação ocorrem antes da criação do software, enquanto os testes de validação ocorrem após a sua finalização.
+() Os testes de verificação são realizados manualmente, enquanto os testes de validação são automatizados.
+() Os testes de verificação são mais abrangentes que os testes de validação.
+() Os testes de validação não são necessários se os testes de verificação forem realizados com sucesso.
+(X) Os testes de verificação focam na qualidade do processo de desenvolvimento, enquanto os testes de validação focam na qualidade do produto final.
+
+
+3.Com base na apresentação dos trabalhos sobre o Estatística da Garantia da Qualidade de Software responda a seguinte questão:
+Qual das alternativas a seguir NÃO é um tópico abordado na Estatística da Garantia da Qualidade de Software?  
+
+() Análise de Dados: coleta e interpretação de dados para entender a qualidade do software.
+() Controle Estatístico de Processos utilização de técnicas estatísticas para monitorar e controlar o processo de desenvolvimento.
+() Distribuições de Probabilidade: modelagem da variabilidade nos dados e previsão de eventos futuros.
+(X) Testes de Usabilidade: avaliação da facilidade de uso e aprendizado do software.
+() Métricas Estatísticas: medidas quantitativas para avaliar a qualidade do software e o desempenho do processo.
+
+
+4.Com base na apresentação dos trabalhos sobre o Estatística da Garantia da Qualidade de Software responda a seguinte questão:
+A Estatística da Garantia da Qualidade de Software contribui para:  
+
+() Aumentar a velocidade do desenvolvimento de software, reduzindo a necessidade de testes.
+() Diminuir a quantidade de bugs no software, aprimorando a qualidade do código.
+() Garantir a satisfação dos clientes com o software, mesmo que apresente falhas.
+() Reduzir os custos de manutenção do software, diminuindo a necessidade de correções.
+(X) Identificar e prevenir problemas no processo de desenvolvimento, antes que afetem o produto final.
+
+
+5.Qual das alternativas a seguir NÃO é um benefício da aplicação do Seis Sigma na Engenharia de Software?  
+
+() Redução de defeitos e falhas no software.
+() Aumento da produtividade e eficiência no processo de desenvolvimento.
+() Melhoria da qualidade e confiabilidade do software.
+() Maior satisfação dos clientes com o software.
+(X) Diminuição da necessidade de testes e validação do software.
+
+
+6.Sobre Conceito de Confiabilidade de Software e sua Importância, responda:
+Qual das alternativas a seguir NÃO está relacionada à confiabilidade do software?  
+
+() Capacidade do software de funcionar sem falhas durante um período específico.
+() Consistência do software em produzir resultados esperados em diferentes condições de uso.
+() Disponibilidade do software para atender às necessidades dos usuários.
+() Facilidade de manutenção e correção de erros no software.
+(X) Velocidade de execução do software e resposta a comandos dos usuários.
+
+
+7.Qual a principal mudança que a criação da função de Garantia de Qualidade de Software proporcionou à indústria de software?    
+
+() Redução do tempo de desenvolvimento de software.
+() Aumento da quantidade de funcionalidades em cada versão do software.
+() Diminuição dos custos de manutenção do software.
+(X) Formalização da gestão da qualidade do software.
+() Aumento da agilidade no processo de desenvolvimento de software.
+
+
+8.Qual dos itens a seguir NÃO é um elemento de garantia da qualidade de software?
+
+() Padrões: normas e diretrizes estabelecidas por organizações como ISO e IEEE.
+() Revisões e auditorias: atividades para verificar a conformidade com padrões e boas práticas.
+() Teste: processo para identificar erros e falhas no software.
+() Coleta e análise de erros/defeitos: levantamento e análise de dados sobre problemas encontrados no software.
+(X) Implementação de novas funcionalidades no software.
+
+
+9.Qual a principal dificuldade em estabelecer uma abordagem única para a Garantia da Qualidade de Software em diferentes projetos?  
+
+() Falta de profissionais qualificados em SQA.
+() Diversidade de linguagens de programação utilizadas no desenvolvimento de software.
+() Dificuldade em encontrar ferramentas adequadas para cada tipo de software.
+(X) Variedade de requisitos e características específicas de cada produto de software.
+() Falta de padronização nos processos de desenvolvimento de software.
+
+
+10.De acordo com o texto, qual a principal limitação das abordagens formais para a garantia de qualidade de software?
+
+() Alto custo de implementação e manutenção.
+(X) Dificuldade de encontrar profissionais qualificados para utilizá-las.
+() Falta de padronização das metodologias utilizadas.
+() Baixa adoção na prática comercial do desenvolvimento de software.
+() Incompatibilidade com as metodologias ágeis de desenvolvimento.
+
+
+11.Qual das métricas de código-fonte NÃO mede a coesão do código?
+
+() Acoplamento
+() Modularidade
+(X) Tamanho
+() Legibilidade
+() Coesão
+
+
+12.De acordo com o texto, quais são os três principais objetivos da análise de métricas de manutenção de software?
+
+() Identificar áreas de melhoria nos processos de desenvolvimento, tomar decisões informadas sobre alocação de recursos e monitorar o progresso ao longo do tempo.
+(X) Identificar áreas de melhoria nos processos de manutenção, tomar decisões informadas sobre alocação de recursos e monitorar o progresso ao longo do tempo.
+() Identificar áreas de melhoria nos processos de desenvolvimento, tomar decisões informadas sobre alocação de recursos e avaliar a efetividade dos testes.
+() Identificar áreas de melhoria nos processos de manutenção, tomar decisões informadas sobre alocação de recursos e melhorar a qualidade do código.
+() Identificar áreas de melhoria nos processos de desenvolvimento, avaliar a efetividade dos testes e monitorar o progresso ao longo do tempo.
+
+
+13.Qual das alternativas a seguir NÃO é um benefício da análise de métricas de manutenção de software?  
+
+(X) Redução do tempo de desenvolvimento de software.
+() Melhoria da eficiência dos processos de manutenção.
+() Aumento da qualidade do software.
+() Redução dos custos de manutenção.
+() Melhoria da satisfação do cliente.
+
+
+14.O CMMI (Capability Maturity Model Integration) é um modelo de avaliação de maturidade de processos que visa auxiliar as organizações a melhorar seus processos de software, resultando em produtos de alta qualidade e maior satisfação do cliente. De acordo com o texto, quais são os principais níveis de maturidade do CMMI?  
+
+() Iniciante, Intermediário, Avançado e Especialista.
+(X) Inicial, Gerenciado, Definido, Gerenciado Quantitativamente e Otimizado.
+() Básico, Intermediário, Avançado e Excelente.
+() Planejado, Executado, Monitorado e Controlado e Otimizado.
+() Incompleto, Completo, Maduro e Excelente.
+
+
+15.Quais são os principais benefícios da adoção do CMMI pelas organizações?
+
+() Redução do tempo de desenvolvimento de software.
+() Melhoria da qualidade do software e da eficiência dos processos de desenvolvimento.
+() Aumento da produtividade da equipe e da satisfação dos clientes.
+() Redução dos custos de manutenção de software.
+(X) Todas as alternativas acima.
+
+
+16.O MPS-BR (Melhoria de Processo do Software Brasileiro) foi criado com o objetivo de:
+
+() Estabelecer um padrão único de desenvolvimento de software para todas as empresas brasileiras.
+(X) Atender às necessidades específicas das empresas brasileiras de software, oferecendo uma alternativa acessível e adaptada à realidade do mercado nacional.
+() Facilitar a importação de tecnologias de desenvolvimento de software de países desenvolvidos.
+() Padronizar os processos de certificação de software no Brasil.
+() Reduzir o tempo de desenvolvimento de software em empresas brasileiras.
+
+
+17.De acordo com o MPS-BR, quais características definem um processo no Nível D - Largamente Definido?
+
+() Processos são básicos e documentados de forma informal.
+(X) Processos são documentados e controlados, com métricas para acompanhamento.
+() Processos são completamente definidos e padronizados em toda a organização.
+() Processos são otimizados e continuamente aprimorados com base em dados e feedback.
+() Processos são caóticos e imprevisíveis, sem documentação ou controle formal.
+
+
+18.Com base no cenário descrito, quais são os principais desafios que a empresa pode enfrentar ao implementar o MPS-BR?
+
+() Falta de conhecimento sobre o modelo e seus benefícios por parte da equipe.
+() Resistência à mudança por parte dos colaboradores, acostumados com os processos informais.
+() Dificuldade em integrar o MPS-BR aos processos existentes, que são complexos e interligados.
+() Alto custo de implementação e treinamento, inviável para uma empresa de médio porte.
+(X) Todos os desafios acima.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8; /* Cor de fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #fff; /* Cor do container de login */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333; /* Cor do título */
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 24px);
+            padding: 10px;
+            border: 1px solid #ccc; /* Cor da borda dos inputs */
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #007bff; /* Cor do botão */
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            color: #007bff; /* Cor do link de "Esqueceu a senha?" */
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .register-link {
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #007bff; /* Cor do link de "Cadastrar novo usuário" */
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1>Login</h1>
+    <form method="post" th:action="@{/usuarios/login}">
+        <input type="text" placeholder="Nome" name="nome" required>
+        <input type="password" placeholder="Senha" name="senha" required>
+        <button type="submit">Logar</button>
+    </form>
+    <div class="register-link">
+        <a th:href="@{/usuarios}">Cadastrar novo usuário</a>
+    </div>
+</div>
+</body>
+</html>

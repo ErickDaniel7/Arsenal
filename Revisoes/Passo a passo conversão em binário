@@ -1,0 +1,71 @@
+192.168.19.50/24 - Mascada de rede vêm sempre depois da barra, exemplo: /24
+
+192
+
+192 * 2 = 96 = 0
+96 * 2 = 48 = 0			192 2	       96 2	       48 2	       24 2	       12 2		3 2		1 2
+48 * 2 = 24 = 0		      - 18┋ 96       - 8┋ 48         - 4┋ 24         - 2┋ 12         - 12 6	      - 2 1,1           ┋ 1
+24 * 2 = 12 = 0	 	        ▬▬┋            ▬┋              ▬┋              ▬┋              ▬▬               ▬   ┋           ▼ ▲
+12 * 2 = 6 = 0 			012            16              08              04              00               1 > ▲           ▙▟  
+6 * 2 = 3 = 0 		       - 12          - 16             - 8             - 4
+3 * 2 = 1 = 1  			 ▬▬            ▬▬               ▬               ▬ 
+1 * 2 = 1 = 1  		         00            00               0               0 
+
+168
+
+168 * 2 = 84 = 0
+84 * 2 = 42 = 0
+42 * 2 = 21 = 0
+21 * 2 = 10 = 1
+10 * 2 = 5 = 0
+5 * 2 = 2 = 1
+2 * 2 = 1 = 0
+1 * 2 = 1 = 1
+
+19
+
+19 * 2 = 9 = 1
+9 * 2 = 4 = 1
+4 * 2 = 2 = 0
+2 * 2 = 1 = 0
+1 * 2 = 1 = 1
+          = 0
+	  = 0
+	  = 0
+
+50
+
+50 * 2 = 25 = 0
+25 * 2 = 12 = 1
+12 * 2 = 6 = 0
+6 * 2 = 3 = 0
+3 * 2 = 1 = 1
+1 * 2 = 1 = 1
+	  = 0
+	  = 0
+
+Mascara de Rede
+24
+
+24 * 2 = 12 = 0
+12 * 2 = 6 = 0
+6 * 2 = 3 = 0
+3 * 2 = 1 = 1
+1 * 2 = 1 = 1
+	  = 0
+	  = 0
+	  = 0
+
+Caso a conversão termine no 1 * 2 antes de chegar aos 8 numeros, zeros são adicionados, igual no exemplo acima.
+
+					    192      168      19       50
+					     ||       ||      ||       ||
+IP 192.168.10.50 convertido em binário = 11000000.10101000.00010011.00110010
+
+					       24
+					       ||
+Mascara de rede /24 convertida em binário = 00011000
+
+Como descobrir o tamanho do Bloco de endereço:
+Para descobrir o tamanho do bloco de endereço, pegamos a máscara, no caso o número após a "/" nesse caso é o 24, total de bits máximo é 32 (32-24) sobrando 8 bits.
+Como é binário, fazemos 2 elevado a 8, sendo assim, 256 é o tamanho do bloco de endereço.

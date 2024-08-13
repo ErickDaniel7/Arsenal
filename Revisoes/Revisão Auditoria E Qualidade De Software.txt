@@ -1,0 +1,141 @@
+1.Qual é a principal diferença entre auditoria de tecnologia da informação (TI) e auditoria de controles por meio de TI?
+
+(X)A auditoria de TI se concentra na avaliação dos sistemas de informação e infraestrutura tecnológica da organização, enquanto a auditoria de controles por meio de TI se concentra na avaliação dos controles internos relacionados ao uso de tecnologia.
+
+()A auditoria de controles por meio de TI se concentra exclusivamente na segurança da informação, enquanto a auditoria de TI abrange aspectos mais amplos, como conformidade regulatória e governança de TI.
+
+()A auditoria de TI e a auditoria de controles por meio de TI são essencialmente a mesma coisa, apenas com terminologias diferentes usadas em diferentes contextos organizacionais.
+
+()A auditoria de TI é realizada apenas por auditores internos da organização, enquanto a auditoria de controles por meio de TI é conduzida por auditores externos especializados em tecnologia.
+
+
+
+
+
+Sabemos que  a Auditoria de sistema pode detectar problemas em :
+Fraudes em e-mail; Uso inadequado de hardwares; Fraudes, erros e acidentes; Vazamento de informações; Falta de segurança física (acessos indevidos).
+
+Marque as opções que descrevem corretamente os problemas que podem ser detectados por uma auditoria de sistema.  
+
+(X)Uma auditoria de sistema pode detectar tentativas de acesso não autorizado aos servidores da empresa.
+()Uma auditoria de sistema não pode detectar atividades maliciosas de malware em computadores da rede.
+()Uma auditoria de sistema não pode detectar vazamento de informações confidenciais.
+(X)Uma auditoria de sistema pode detectar atividades suspeitas em contas de e-mail corporativo.
+(X)Uma auditoria de sistema pode detectar falhas de segurança física, como acesso não autorizado a salas de servidores.
+()Uma auditoria de sistema não é capaz de identificar fraudes financeiras cometidas por funcionários.
+(X)Uma auditoria de sistema pode identificar o uso indevido de privilégios de administrador por um funcionário.
+
+
+
+
+
+Associe corretamente os tipos de auditorias de sistemas com suas respectivas descrições
+Validação dos processos de gestão de projetos, cumprimento de metodologia de qualidade, orçamentos previstos e realizados e avaliação de desvios
+R: Auditoria de Desenvolvimento de Sistemas
+
+Avaliação de localidades e riscos ambientais: vidas (capital intelectual), furto/roubo, acesso, umidade, temperatura, acidentes, desastres, etc
+R: Auditoria de Segurança Física
+ 
+Atendimento a regulamentações locais e internacionais
+R: Auditoria Legal ou Regulatória
+
+Métodos de autenticação, autorização, criptografia, gestão de certificados digitais, segurança de redes
+R: Auditoria em Segurança da Informação
+
+Classificação dos dados, atualização, bancos de dados, aplicativos, acessos, estudo dos fluxos (entradas e saídas) de transmissão, controles de verificação qualidade e confiabilidade das informações
+R: Auditoria de Integridade de Dados
+
+
+
+
+
+Qual das seguintes técnicas de auditoria de sistemas de informação é mais adequada para identificar padrões, anomalias e tendências em grandes conjuntos de dados?
+Resposta: Análise de Dados
+
+Qual é o conceito de Auditoria de Software?
+Resposta: Um processo sistemático e independente que tem como objetivo avaliar a conformidade, eficácia e eficiência dos processos de desenvolvimento, manutenção e gestão de software.
+
+Por que a auditoria de software é importante para uma organização?
+Resposta: Para identificar e prevenir problemas e riscos relacionados ao software.
+
+Qual é um dos principais objetivos da auditoria de software?
+Resposta: Garantir a conformidade com regulamentos externos.
+
+Uma empresa de serviços de computação em nuvem desenvolve um plano de contingência para garantir a continuidade dos serviços em caso de falhas ou interrupções não planejadas. Qual das seguintes afirmações melhor descreve o objetivo principal desse plano?
+Resposta: O plano de contingência visa estabelecer procedimentos e diretrizes claras para a rápida recuperação dos serviços de nuvem em caso de interrupções, garantindo assim a continuidade dos negócios para os clientes.
+
+Durante a técnica de auditoria de sistemas de informação conhecida como "Testes de Controles", que tipo de testes os auditores podem realizar?
+Resposta: Todos os anteriores (Testes de integridade de dados, Testes de recuperação de desastres e Testes de segurança).
+
+Qual é a principal diferença entre a auditoria interna e a auditoria externa?
+Resposta: A auditoria interna é realizada por profissionais da própria organização, avaliando processos internos e conformidade, enquanto a auditoria externa é conduzida por auditores independentes, focando na conformidade legal e transparência das informações.
+
+Durante qual técnica de auditoria os auditores observam diretamente as operações e processos relacionados aos sistemas de informação?
+Resposta: Observação Direta
+
+Qual é o objetivo de avaliar a eficácia dos processos durante uma auditoria de software?
+Resposta: Verificar se os processos de desenvolvimento, manutenção e gestão de software estão sendo executados de maneira eficiente.
+
+Qual das seguintes opções descreve corretamente o que são o ITIL e o COBIT?
+Resposta: O ITIL é um framework que se concentra na gestão de serviços de TI, enquanto o COBIT é um framework que aborda principalmente o gerenciamento de processos de TI e governança corporativa.
+
+Qual das seguintes técnicas de auditoria de sistemas de informação envolve a simulação de ataques cibernéticos para avaliar a segurança dos sistemas?
+Resposta: Testes de Penetração
+
+
+
+
+
+Quais são algumas medidas corretivas que a empresa pode implementar com base nas descobertas da auditoria de segurança da informação?
+Resposta: Melhorar os procedimentos de acesso ao sistema e implementar um monitoramento mais rigoroso dos acessos dos funcionários.
+
+Por que é importante revisar os registros de incidentes de segurança durante a auditoria de segurança da informação?
+Resposta: Para identificar tentativas de acesso não autorizado e violações de segurança.
+
+Quais são os principais documentos que o auditor deve revisar durante a auditoria de segurança da informação na empresa XYZ?
+Resposta: Política de Segurança da Informação e Procedimentos de Acesso ao Sistema.
+
+Qual é o objetivo principal da revisão dos relatórios de auditoria de segurança da informação anteriores?
+Resposta: Verificar se as recomendações anteriores foram implementadas e as questões identificadas foram corrigidas.
+
+Por que é importante fornecer treinamento em segurança da informação para os funcionários?
+Resposta: Para aumentar a conscientização sobre a segurança da informação e garantir que os funcionários entendam as políticas e procedimentos de segurança.
+
+
+
+
+
+Na fase de desenvolvimento de sistemas de informação, o auditor examina diferentes aspectos para garantir práticas adequadas de desenvolvimento seguro de software. Um desses aspectos é a gestão de requisitos, que envolve a definição clara e completa dos requisitos do sistema antes do início do desenvolvimento. Essa prática é essencial para garantir que o software atenda às necessidades e expectativas dos usuários finais e minimize o risco de falhas e vulnerabilidades de segurança.
+
+(X)Vedadeiro
+()Falso
+
+Durante a auditoria na aquisição de sistemas de informação, o que o auditor revisa para garantir transparência e alinhamento com os objetivos estratégicos da organização?
+
+()Contratos de segurança.
+(X)Processo de seleção de fornecedores.
+()Manuais de usuário.
+()Especificações técnicas.
+
+Durante a auditoria na aquisição de sistemas de informação, o auditor revisa diversos aspectos para garantir transparência e alinhamento com os objetivos estratégicos da organização. Esses aspectos incluem o processo de seleção de fornecedores, que deve ser conduzido de forma transparente e competitiva, permitindo que diferentes fornecedores concorram igualmente. Além disso, o auditor verifica se os contratos estabelecidos incluem cláusulas adequadas de segurança e desempenho, garantindo que as necessidades e expectativas da organização sejam atendidas. Diante disso,o auditor revisa o processo de seleção de fornecedores durante a auditoria na aquisição de sistemas de informação
+
+(X)Vedadeiro
+()Falso
+
+O Comitê de Padrões da Associação de Controle e Auditoria de Tecnologia da Informação dos Estados Unidos (ISACA) é responsável por desenvolver e manter os padrões profissionais para a auditoria de tecnologia da informação. O que o comitê de padrões da Associação de Controle e Auditoria de Tecnologia de Informação dos Estados Unidos define em relação aos padrões de auditoria?
+
+()Apenas ética profissional e padrões.
+(X)Responsabilidade, autoridade e prestação de contas; independência profissional; ética profissional e padrões; competência.
+()Planejamento; emissão de relatório; atividades de follow-up (acompanhamento).
+()Responsabilidade, autoridade e prestação de contas; independência profissional; competência.
+
+A documentação adequada de sistemas de informação é crucial para garantir sua compreensão e manutenção eficaz ao longo do tempo. Durante a auditoria, o auditor revisa diversos documentos, incluindo manuais de usuário, especificações técnicas e procedimentos de operação. A documentação dos sistemas não precisa ser abrangente e atualizada, facilitando a compreensão dos sistemas e a realização de atividades de manutenção.
+
+()Vedadeiro
+(X)Falso
+
+Durante a auditoria na manutenção de sistemas de informação, o auditor avalia diversos aspectos para garantir que os sistemas sejam mantidos de forma segura e eficiente. Um desses aspectos é a avaliação da eficácia dos procedimentos de backup e recuperação de desastres em relação aos requisitos de negócios da organização.
+
+(X)Vedadeiro
+()Falso
+

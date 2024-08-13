@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" data-bs-theme="light">
+
+<head>
+    <title>Cadastro de Quartos</title>
+    <meta charset="UTF-8">
+    <!-- Adicionando Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+
+<body style="background-color:light">
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light ">
+        <a class="navbar-brand" href="#">CONTROLE DE QUARTOS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/resort/quarto">Quartos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resort/hospede">Hóspedes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/resort/reserva">Reservas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <section class="mt-4">
+            <div class="row col-12 d-flex justify-content-end ml-1 mb-0">
+                <div class="d-flex ">
+                    <div class="form-group mr-2">
+                        <label for="statusFiltro" class="sr-only">Status</label>
+                        <select id="statusFiltro" class="form-control" style="height:35px">
+                            <option value="todos">Status</option>
+                            <option value="disponivel">Disponível</option>
+                            <option value="ocupado">Ocupado</option>
+                        </select>
+                    </div>
+                    <div class="form-group mr-2">
+                        <label for="quantidadeQuartos" class="sr-only">Quantidade de Quartos</label>
+                        <input type="number" id="quantidadeQuartos" name="quantidadeQuartos" class="form-control"
+                            placeholder="Quantidade de Quartos" style="height:35px">
+                    </div>
+                    <div class="form-group mr-2">
+                        <label for="vistaFiltro" class="sr-only">Vista</label>
+                        <select id="vistaFiltro" class="form-control" style="height:35px">
+                            <option value="todos">Vista</option>
+                            <option value="vistaMar">Vista para o Mar</option>
+                            <option value="semVistaMar">Sem Vista para o Mar</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-secondary mr-4" style="height:35px" id="filtroButton">Filtrar</button>
+                </div>
+
+            </div>
+            <div class="row mt-0 ml-4 mr-4">
+                <div class="col-lg-3 col-md-12 mt-2">
+                    <div class="card p-4">
+                        <form id="formularioQuarto" class="formulario">
+                            <input type="hidden" id="id" name="id" class="form-control">
+
+                            <div class="form-group">
+                                <label for="nome" class="label__input">Nome:</label>
+                                <input type="text" id="nome" name="nome" class="form-control mt-0"
+                                    aria-describedby="nome">
+
+
+
+                                <label for="nome" class="label__input">Descrição:</label>
+                                <input type="text" id="descricao" name="descricao" class="form-control mt-0"
+                                    aria-describedby="descricao">
+
+
+
+                                <label for="valorDia" class="label__input">Diária:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">R$</span>
+                                    </div>
+                                    <input type="text" id="valorDia" name="valorDia" class="form-control"
+                                        aria-describedby="valor">
+                                </div>
+
+
+
+                                <label for="capacidade" class="label__input">Capacidade:</label>
+                                <input type="number" id="capacidade" name="capacidade" class="form-control"
+                                    aria-describedby="capacidade">
+
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="vistaMar" name="vistaMar">
+                                <label class="form-check-label" for="vistaMar">Vista Pro Mar</label>
+                            </div>
+                        </form>
+
+                        <div class="mb-autod-flex flex-column justify-content-end"
+                            style="position: relative; bottom:0;top:35px">
+                            <hr>
+                            <button type="button" class="btn btn-primary w-100 mb-1 salvarButton">Salvar</button>
+                            <button type="button" class="btn btn-danger w-100 excluir">Excluir</button>
+                            <button type="button" class="btn btn-secondary w-100 mt-1 clean-field">Limpar
+                                Campos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 mt-2">
+                    <div class="card p-4" >
+                        <table class="table" id="tabelaQuartos">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Descrição</th>
+                                    <th>V.Mar</th>
+                                    <th>V.Diária</th>
+                                    <th>Capacidade</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="quarto : ${quartos}">
+                                    <td th:text="${quarto.id}"></td>
+                                    <td th:text="${quarto.nome}"></td>
+                                    <td th:text="${quarto.descricao}"></td>
+                                    <td th:text="${quarto.vistaMar ? 'Sim' : 'Não'}"></td>
+                                    <td th:text="${#numbers.formatCurrency(quarto.valorDia)}"></td>
+                                    <td th:text="${quarto.capacidade}"></td>
+                                    <td th:text="${quarto.status == 'DISPONIVEL' ? 'DISPONÍVEL' : quarto.status}"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Modal de exibição de erro-->
+    <!-- Modal de Erro -->
+    <div class="modal fade" id="erroModal" tabindex="-1" role="dialog" aria-labelledby="erroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="erroModalLabel">Erro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="erroModalMensagem">
+                    <!-- Mensagem de erro será inserida aqui -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicionando scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/backend.js"></script>
+    <script src="/js/frontend_quarto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+InitComponents = Inicializa o componente
+SetLocationRelativeTo(null) = Tela fica centralizado
+Sempre quando colocar setText = deve se colocar uma string
+Para criar tabela = Precisa se atrubuir um modelo
+Para carregar uma tabela = Determina a quantidade de colunas, expessura, 
+
+Tabelas para manipular, tratamento de excessoes, campos para manipular
+Inserir metodos, retornar dados
