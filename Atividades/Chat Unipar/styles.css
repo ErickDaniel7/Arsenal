@@ -1,17 +1,174 @@
-#welcome-form,
-#chat-room {
-    display: none;
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evita rolagem indesejada */
 }
 
+/* Estilo do formulário de boas-vindas */
+#welcome-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Estilo do título no formulário de boas-vindas */
+#welcome-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilo do campo de entrada e botões no formulário de boas-vindas */
+#welcome-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#welcome-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#welcome-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Efeito de zoom suave no hover */
+}
+
+#welcome-form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Estilo da sala de bate-papo */
+#chat-room {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo do título na sala de bate-papo */
+#chat-room h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilo da área de mensagens */
 #messages {
-    border: 1px solid #ddd; 
-    padding: 10px; 
-    height: 300px; 
-    overflow-y: scroll; 
-    background-color: #f9f9f9; 
-    border-radius: 5px; 
-    font-family: Arial, sans-serif; 
-    font-size: 14px; 
-    color: #333; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/* Estilo das mensagens */
+#messages div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#messages .join-message {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#messages .leave-message {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#messages .chat-message {
+    background-color: #e9ecef;
+}
+
+/* Estilo para a área de entrada de mensagem */
+#messageInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo dos botões na sala de bate-papo */
+#chat-room button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#chat-room button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Efeito de zoom suave no hover */
+}
+
+#chat-room button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #messages {
+        height: 300px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #messageInput {
+        width: calc(100% - 20px);
+    }
 }
