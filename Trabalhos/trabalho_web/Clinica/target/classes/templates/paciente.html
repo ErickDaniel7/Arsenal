@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paciente</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+
+<body>
+<h1>Cadastro de Paciente</h1>
+<form th:action="@{/paciente/save}" method="post">
+    <label for="nome">Nome Completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+    <label for="data_nascimento">Data de Nascimento:</label><br>
+    <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+    <label for="plano">Plano:</label><br>
+    <input type="text" id="plano" name="plano" required><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<h1>Listar Paciente</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Data Nascimento</th>
+        <th>Plano</th>
+    </tr>
+    </thead>
+
+
+    <tbody>
+    <tr th:each="paciente : ${pacientes}">
+        <td th:text="${paciente.id}" ></td>
+        <td th:text="${paciente.nome}" ></td>
+        <td th:text="${paciente.telefone}" ></td>
+        <td th:text="${paciente.data_nascimento}" ></td>
+        <td th:text="${paciente.plano}" ></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

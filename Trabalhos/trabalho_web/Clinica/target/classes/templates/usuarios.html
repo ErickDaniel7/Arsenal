@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+</head>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+</style>
+
+<body>
+<h1>Adicionar Novo Usuario</h1>
+<form method="post" th:action="@{/usuarios/save}">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login"><br><br>
+    <label for="senha">Senha:</label>
+    <input type="text" id="senha" name="senha">
+    <label for="admin">Admin:</label>
+    <select id="admin" name="admin">
+        <option value=true>Sim</option>
+        <option value=false>Não</option>
+    </select>
+    <br><br>
+    <button type="submit">Salvar</button>
+</form>
+
+<h1>Listar Usuários</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Admin</th>
+    </tr>
+    </thead>
+
+
+    <tbody>
+    <tr th:each="usuario : ${usuarios}">
+        <td th:text="${usuario.id}" ></td>
+        <td th:text="${usuario.nome}" ></td>
+        <td th:text="${usuario.admin}" ></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

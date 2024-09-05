@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acessos</title>
+</head>
+<style>
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    select {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #options, #loginForm, #patientRegistrationForm, #doctorRegistrationForm {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #loginForm, #patientRegistrationForm, #doctorRegistrationForm {
+        display: none;
+    }
+</style>
+<body>
+    <div th:if="${erro}" th:text="${erro}" style="color: red;"></div>
+    <div id="options">
+        <h2>Escolha uma opção:</h2>
+        <ul>
+            <li><a href="/usuarios">Cadastrar Usuário</a></li>
+            <li><a href="/paciente">Cadastrar Paciente</a></li>
+            <li><a href="/medico">Cadastrar Médico</a></li>
+            <li><a href="/atendimento">Cadastrar Atendimento</a></li>
+        </ul>
+    </div>
+</body>
+</html>

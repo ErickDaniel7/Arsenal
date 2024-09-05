@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atendimento</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="datetime-local"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+<body>
+<h1>Agendar Consulta</h1>
+
+<form th:action="@{/atendimento/save}" method="post">
+
+    <label for="dataHora">Hora da consulta</label>
+    <input type="datetime-local" id="dataHora" name="dataHora" required><br><br>
+
+    <label for="anamnese">Anamnese</label>
+    <input type="text" id="anamnese" name="anamnese" required><br><br>
+
+    <label for="medico">Médico:</label><br>
+    <select id="medico" name="medico">
+        <option value="">Selecione um médico</option>
+        <option th:each="medico : ${medicos}" th:value="${medico.id}" th:text="${medico.nome}"></option>
+    </select><br><br>
+
+    <label for="paciente">Paciente:</label><br>
+    <select id="paciente" name="paciente">
+        <option value="">Selecione um paciente</option>
+        <option th:each="paciente : ${pacientes}" th:value="${paciente.id}" th:text="${paciente.nome}"></option>
+    </select><br><br>
+
+    <button type="submit">Agendar Consulta</button>
+</form>
+
+<h1>Listar Atendimentos</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Data e Hora</th>
+        <th>Anamnese</th>
+        <th>Nome Médico</th>
+        <th>Nome Paciente</th>
+    </tr>
+    </thead>
+
+
+    <tbody>
+    <tr th:each="atendimentos : ${atendimentos}">
+        <td th:text="${atendimentos.id}" ></td>
+        <td th:text="${atendimentos.dataHora}" ></td>
+        <td th:text="${atendimentos.anamnese}" ></td>
+        <td th:text="${atendimentos.medico.nome}" ></td>
+        <td th:text="${atendimentos.paciente.nome}" ></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
