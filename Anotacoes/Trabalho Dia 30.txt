@@ -1,0 +1,3 @@
+Criação do Back-end e realizar vinculação com o banco. Criar um Front de Hábitos estilo Check-Box
+
+Criar um front estilo calendário, contendo data, prazo de conclusão. 
