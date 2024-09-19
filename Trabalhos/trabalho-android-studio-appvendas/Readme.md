@@ -8,7 +8,7 @@
 <hr>
 
 
-<img src="https://github.com/ErickDaniel7/trabalho-android-studio-appvendas/blob/main/Imagens/Interface.png" width="230">
-<img src="https://github.com/ErickDaniel7/trabalho-android-studio-appvendas/blob/main/Imagens/Cadastro%20de%20Clientes.png" width="230">
-<img src="https://github.com/ErickDaniel7/trabalho-android-studio-appvendas/blob/main/Imagens/Cadastrar%20Itens.png" width="230">
-<img src="https://github.com/ErickDaniel7/trabalho-android-studio-appvendas/blob/main/Imagens/Lancar%20Pedidos.png" width="230">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/trabalho-android-studio-appvendas/Imagens/Interface.png" width="230">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/trabalho-android-studio-appvendas/Imagens/Cadastro%20de%20Clientes.png" width="230">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/trabalho-android-studio-appvendas/Imagens/Cadastrar%20Itens.png" width="230">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/trabalho-android-studio-appvendas/Imagens/Lancar%20Pedidos.png" width="230">
