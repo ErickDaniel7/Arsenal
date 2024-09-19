@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-5">
+        <h1 class="text-3xl font-bold text-center text-gray-700">Task Tracker</h1>
+        <ul class="mt-5">
+            <li th:each="task : ${tasks}" class="bg-white p-4 rounded shadow mb-2">
+                <strong class="text-lg" th:text="${task.descricao}"></strong> 
+                <span class="ml-2 text-sm" th:text="${task.concluida ? 'Concluída' : 'Pendente'}"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
