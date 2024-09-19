@@ -7,8 +7,8 @@
 
 ### Telas
 
-<img src="https://github.com/ErickDaniel7/trabalho-sub/blob/main/IMG/tela-buscar-pais-abrir-lista.png">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/android-studio/trabalho-sub/IMG/tela-buscar-pais-abrir-lista.png">
 
-<img src="https://github.com/ErickDaniel7/trabalho-sub/blob/main/IMG/tela-listagem-pais.png">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/android-studio/trabalho-sub/IMG/tela-listagem-pais.png">
 
-<img src="https://github.com/ErickDaniel7/trabalho-sub/blob/main/IMG/tela-lista.png">
+<img src="https://github.com/ErickDaniel7/Arsenal/blob/main/Trabalhos/android-studio/trabalho-sub/IMG/tela-lista.png">
