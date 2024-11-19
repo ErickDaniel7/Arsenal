@@ -1,0 +1,48 @@
+### Teste Funcional (caixa-preta):
+O teste funcional é como um verificador de receita. Aqui, olhamos para o software de fora, sem saber o que acontece internamente.
+O foco é se ele faz o que deveria fazer. A importância disso é clara: precisamos garantir que todas as funcionalidades estejam funcionando direitinho,
+conforme o esperado, para que os usuários fiquem satisfeitos. 
+Esses testes são essenciais para validar os requisitos do cliente e evitar surpresas desagradáveis depois que o software estiver em uso.
+
+---
+
+### Teste Estrutural (caixa-branca):
+Agora, o teste estrutural é mais como um mecânico que abre o capô do carro para ver o que está acontecendo por dentro.
+Aqui, analisamos o código e testamos como ele funciona. Isso é super importante, porque mesmo que o software pareça estar funcionando bem na superfície,
+pode haver erros escondidos na lógica interna. Esses testes nos ajudam a encontrar e corrigir esses problemas antes que os usuários se deparem com eles.
+
+---
+
+### Teste de Regressão:
+Imagine que você consertou algo em casa, mas agora está preocupado se o novo reparo vai afetar outras partes da casa. 
+O teste de regressão faz isso: reexecuta testes anteriores para garantir que novas mudanças não quebraram nada que já estava funcionando.
+Isso é vital para manter a integridade do software, especialmente quando estamos constantemente adicionando novas funcionalidades.
+
+---
+
+### Teste de Carga:
+Esse teste é como preparar uma equipe de futebol para um jogo grande. Ele verifica como o sistema se comporta sob pressão, 
+testando quantos usuários pode suportar ao mesmo tempo. A importância aqui é garantir que o software não desmorone quando o tráfego aumenta, 
+como em datas de vendas importantes. Precisamos saber que ele pode lidar com isso.
+
+---
+
+### Teste de Estresse:
+O teste de estresse é o momento em que empurramos o software até seus limites, como colocar um carro na estrada para uma corrida.
+Ele nos ajuda a ver como o sistema reage quando a carga ultrapassa o normal. 
+Isso é crucial para identificar possíveis pontos de falha e garantir que o software seja robusto o suficiente para lidar com situações inesperadas.
+
+---
+
+### Teste de Usabilidade:
+Aqui, o teste de usabilidade é como observar amigos usando um novo aplicativo. Ele se concentra em quão fácil e intuitivo o software é para os usuários.
+É importante que o software não apenas funcione, mas também seja agradável de usar.
+Se as pessoas não conseguirem navegar facilmente, elas podem ficar frustradas, e isso pode impactar a aceitação do produto.
+
+---
+
+### Teste de Segurança:
+Por último, mas não menos importante, temos o teste de segurança. Imagine proteger sua casa com um bom sistema de alarme.
+Esse teste verifica se o software está seguro contra ataques e vulnerabilidades. 
+É crucial garantir que dados sensíveis estejam protegidos e que os usuários possam confiar no software. 
+Afinal, a segurança é uma prioridade máxima em um mundo digital cheio de ameaças.
